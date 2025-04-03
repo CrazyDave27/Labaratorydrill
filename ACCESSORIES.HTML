@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Accessories</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .nav {
+            background: #333;
+            color: white;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        .nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .nav li {
+            margin: 0 15px;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .nav a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            position: relative;
+            height: 100vh; /* Full screen height */
+            background: url(phonecase.jpg) no-repeat center center/cover;
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+        }
+
+        /* Add the faded overlay */
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Faded effect (black with 50% opacity) */
+            z-index: 1;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            z-index: 2;
+            position: relative;
+            padding-top: 20vh; /* Add some spacing at the top */
+        }
+
+        .hero p {
+            font-size: 1.5em;
+            z-index: 2;
+            position: relative;
+        }
+        .section {
+            padding: 80px 20px;
+            border-bottom: 1px solid #ddd;
+            background: white;
+        }
+        .footer {
+            background: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .section h2 {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .section p {
+            text-align: center;
+            font-size: 1.2em;
+        }
+        .product-images {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .product-images img {
+            margin: 10px;
+            width: 200px;
+            height: auto;
+            display: inline-block;
+        }
+        .btn {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="nav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#accessories">Accessories</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div>
+            <h1>Welcome to Our Phone Accessories Store</h1>
+            <p>Find the best phone accessories for your device</p>
+        </div>
+    </section>
+
+    <!-- Accessories Section -->
+    <section id="accessories" class="section">
+        <h2>Phone Accessories</h2>
+        <p>Browse our wide range of phone accessories.</p>
+        
+        <!-- Silicone Cases -->
+        <div class="product-images">
+            <h3>Silicone Cases</h3>
+            <p>Our Silicone Cases are the perfect blend of comfort and protection. Made from soft, flexible silicone material, these cases provide a snug fit to your phone, offering great protection against bumps and scratches without adding any bulk. The smooth, matte finish provides a soft touch, while the flexible nature allows for easy installation and removal. Available in a variety of vibrant colors, these cases are the ideal choice for users who want a stylish yet practical solution for phone protection.</p>
+            <img src="silicone case.jpg" alt="Silicone Case">
+            <img src="silicone3.jpg" alt="Silicone Case 2">
+            <img src="silicone4.jpg" alt="Silicone Case 3">
+            <div>
+                <span class="price">₱350.00</span>
+                <button class="btn">Buy Now</button>
+            </div>
+        </div>
+
+        <!-- Wallet Cases -->
+        <div class="product-images">
+            <h3>Wallet Cases</h3>
+            <p>Keep your phone and essentials together with our premium Wallet Cases. Designed for convenience and style, these cases feature slots to store your credit cards, IDs, and even cash, all in one sleek package. Made from high-quality materials like leather or premium synthetic fabrics, our wallet cases provide full protection while ensuring easy access to all phone functions. Perfect for those who like to travel light, these cases combine style, function, and practicality in one elegant design.</p>
+            <img src="wallet1.jpg" alt="Wallet Case 1">
+            <img src="wallet2.jpg" alt="Wallet Case 2">
+            <div>
+                <span class="price">₱550.00</span>
+                <button class="btn">Buy Now</button>
+            </div>
+        </div>
+
+        <!-- Standard Cases -->
+        <div class="product-images">
+            <h3>Standard Cases</h3>
+            <p>Protect your phone in style with our Standard Cases. These cases are crafted to safeguard your device against drops, scratches, and everyday wear and tear while keeping a slim and lightweight profile. With precise cutouts for easy access to buttons, cameras, and ports, these cases offer seamless functionality without compromising on protection. The durable materials ensure long-lasting protection, making it the perfect option for those looking for reliable, everyday protection without extra bulk.</p>
+            <img src="standard1.jpg" alt="Standard Case 1">
+            <img src="standard2.jpg" alt="Standard Case 2">
+            <img src="standard3.jpg" alt="Standard Case 3">
+            <div>
+                <span class="price">₱400.00</span>
+                <button class="btn">Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="section">
+        <h2>About Us</h2>
+        <p>We are committed to providing high-quality phone accessories that help protect and personalize your devices.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or need support, feel free to reach out to us!</p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Phone Accessories. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
